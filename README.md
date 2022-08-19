@@ -1,1 +1,3 @@
-# SYCL-Basics
+# SYCL Basics
+
+An introduction to SYCL
