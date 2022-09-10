@@ -19,7 +19,7 @@ int main(){
     float *u_new_dev = sycl::malloc_device<float>(dataSize, q);
     auto e2 = q.memcpy(u_new_dev, u_new.data(), dataSize*sizeof(float));
 
-    // FD scheme
+    // Finite Difference scheme
     for (size_t it = 0; it < num_iters; it++)
     {    
         q.submit([&](sycl::handler& cgh){
